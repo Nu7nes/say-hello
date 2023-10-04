@@ -21,6 +21,6 @@ db.once("open", () => { console.log("Connected to MongoDB") });
 app.use('/api', apiRoute)
 app.use(express.static(path.join(__dirname, "client")));
 
-app.listen(3000, () => {
-	console.log("Server is running on port 3000");
+app.listen(process.env.PORT ? Number(process.env.PORT) : 3333, () => {
+	console.log("Server is running");
 });
