@@ -1,0 +1,21 @@
+
+:root {
+    --color-primary: #F7F7F7;
+    --color-secondary: #EEEEEE;
+    --color-secondary-transparent: #EEEEEE90;
+    --color-font: #393E46;
+    --color-accent: #929AAB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Onest', sans-serif;
+}
+
+
+
+button[type=submit]:hover, a:hover {
+    filter: brightness(1.15);
+}

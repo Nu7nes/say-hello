@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type='text/css' href="styles/style.css">
+    <link rel="stylesheet" type='text/css' href="styles/root.css">
+    <link rel="stylesheet" type='text/css' href="styles/header.css">
+    <link rel="stylesheet" type='text/css' href="styles/wall.css">
+    <link rel="stylesheet" type='text/css' href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dosis:wght@300;400;500;600;700&family=Indie+Flower&family=Josefin+Sans:wght@300;400;500;600;700&family=Lilita+One&family=Lobster&family=Onest:wght@100;200;300;400;500;600;700;800&family=Pacifico&family=Permanent+Marker&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
     <title>Say Hello</title>
 </head>
@@ -35,7 +39,8 @@
     </header>
 
     <main class="main">
-        <form class="formContainer">
+        <div id="salutationsContainer" class="salutationsWall"></div>
+        <form id="submitSalutation" class="formContainer">
             <label for="sayHello">Say hello in your language!</label>
             <div>
                 <input type="text" placeholder="Your 'Hello!''" name="sayHello" id="sayHello" required>
@@ -45,6 +50,8 @@
         </form>
     </main>
 
+
+    <script type="module" src="scripts/index.js"></script>
 </body>
 
 </html>
