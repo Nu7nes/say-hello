@@ -4,7 +4,6 @@ import { renderizeSalutations } from "./rederizeSalutations.js";
 
 async function init() {
     const salutations = await loadSalutations();
-    console.log(salutations);
     renderizeSalutations(salutations);
 }
 
